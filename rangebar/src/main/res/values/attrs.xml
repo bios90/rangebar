@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RangeBar">
+        <attr name="color_selected" format="color" />
+        <attr name="color_not_selected" format="color" />
+        <attr name="color_border" format="color" />
+        <attr name="color_time_line" format="color" />
+        <attr name="color_arrow" format="color" />
+        <attr name="thumb_width" format="dimension" />
+        <attr name="connections_size" format="dimension" />
+        <attr name="thumb_radius" format="dimension" />
+        <attr name="connectors_height" format="dimension" />
+        <attr name="time_line_height" format="dimension" />
+        <attr name="progress_left" format="float" />
+        <attr name="progress_right" format="float" />
+    </declare-styleable>
+</resources>

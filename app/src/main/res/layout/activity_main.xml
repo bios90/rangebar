@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80A1D4"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.bios.rangebar.RangeBar
+                android:id="@+id/rb_1"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="128dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                app:connections_size="2dp"
+                app:progress_left="0.5"
+                app:progress_right="1"
+                app:thumb_radius="4dp"
+                app:thumb_width="8dp"
+                app:time_line_height="20dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="22dp">
+
+                <TextView
+                    android:id="@+id/rb_1_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/rb_1_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+
+                <TextView
+                    android:id="@+id/rb_1_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+            <com.bios.rangebar.RangeBar
+                android:id="@+id/rb_2"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginRight="22dp"
+                app:color_arrow="#00AF54"
+                app:color_border="#B1DDF1"
+                app:color_not_selected="#cc007CBE"
+                app:color_selected="#66A03E99"
+                app:color_time_line="#31E981"
+                app:connections_size="4dp"
+                app:progress_left="0.0"
+                app:progress_right="1"
+                app:thumb_radius="0dp"
+                app:thumb_width="12dp"
+                app:time_line_height="52dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="22dp">
+
+                <TextView
+                    android:id="@+id/rb_2_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/rb_2_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+
+                <TextView
+                    android:id="@+id/rb_2_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+            <com.bios.rangebar.RangeBar
+                android:id="@+id/rb_3"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:paddingLeft="22dp"
+                android:paddingRight="22dp"
+                app:color_arrow="#F6E8EA"
+                app:color_border="#F6E8EA"
+                app:color_not_selected="#805A0001"
+                app:color_selected="#80F45B69"
+                app:color_time_line="#00000000"
+                app:connections_size="2.5dp"
+                app:progress_left="0.25"
+                app:progress_right="0.75"
+                app:thumb_radius="3dp"
+                app:thumb_width="10dp"
+                app:time_line_height="42dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="22dp">
+
+                <TextView
+                    android:id="@+id/rb_3_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/rb_3_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+
+                <TextView
+                    android:id="@+id/rb_3_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
