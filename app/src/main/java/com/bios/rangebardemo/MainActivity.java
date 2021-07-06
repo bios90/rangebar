@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity
         rb_3_mode = findViewById(R.id.rb_3_mode);
 
 
+
         rb_1.setListener(new RangeBar.Listener()
         {
             @Override
