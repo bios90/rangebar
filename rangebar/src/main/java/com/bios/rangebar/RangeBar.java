@@ -74,6 +74,7 @@ public class RangeBar extends View
 
     private float last_setted_progress_left = 0.25f;
     private float last_setted_progress_right = 0.75f;
+    private boolean is_initial_sizes_set = true;
 
     public RangeBar(Context context)
     {
@@ -270,10 +271,13 @@ public class RangeBar extends View
         rect_time_line.setRight(width - getPaddingRight() - size_thumb);
         rect_time_line.setBottom(getPaddingTop() + size_connections + size_range_bar_height);
 
-        setProgressLeft(last_setted_progress_left);
-        setProgressRight(last_setted_progress_right);
-//        pos_left = size_range_bar_width * pr;
-//        pos_right = size_range_bar_width * 0.75f;
+
+        if (is_initial_sizes_set)
+        {
+            is_initial_sizes_set = false;
+            setProgressLeft(last_setted_progress_left);
+            setProgressRight(last_setted_progress_right);
+        }
     }
 
     @Override
@@ -549,5 +553,15 @@ public class RangeBar extends View
     public void setListener(Listener listener)
     {
         this.listener = listener;
+    }
+
+    public float getLeftPos()
+    {
+        return pos_left / size_range_bar_width;
+    }
+
+    public float getRightPos()
+    {
+        return pos_right / size_range_bar_width;
     }
 }
