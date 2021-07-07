@@ -1,32 +1,33 @@
 # RangeBar by bios90
+
 Library for Android that allows you to select video timeline or any other data that requires range selection.
 
 <img src="preview.gif" width="300" height="624">
 
 # Usage
 
-*For quick overview of library features you can inspect [demo app xml](https://github.com/bios90/rangebar/blob/main/app/src/main/res/layout/activity_main.xml)*
+_For quick overview of library features you can inspect [demo app xml](https://github.com/bios90/rangebar/blob/main/app/src/main/res/layout/activity_main.xml)_
 
 1. Include the library as local library project.
 
-	```
-	allprojects {
-	   repositories {
-	      jcenter()
-	      maven { url "https://jitpack.io" }
-	   }
-	}
-	```
+    ```
+    allprojects {
+       repositories {
+          jcenter()
+          maven { url "https://jitpack.io" }
+       }
+    }
+    ```
 
-    ``` 
-    implementation "com.github.bios90:rangebar:1.4" 
+    ```
+    implementation "com.github.bios90:rangebar:1.5"
     ```
 
 2. Add RangeBar to your xml layout
 
     ```xml
     <com.bios.rangebar.RangeBar
-       android:id="@+id/rb"   
+       android:id="@+id/rb"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:paddingLeft="24dp"
@@ -42,10 +43,12 @@ Library for Android that allows you to select video timeline or any other data t
        app:thumb_radius="4dp"
        app:thumb_width="12dp" />
     ```
+
     That image explains what each attribute is responsible for
     <img src="details.png" width="540" height="334">
 
 3. Add RangeChangeListener in your code
+
     ```java
     RangeBar rb_1 = findViewById(R.id.rb_1);
     rb_1.setRangeChangeListener(new RangeBar.Listener()
@@ -58,16 +61,20 @@ Library for Android that allows you to select video timeline or any other data t
         }
     });
     ```
-    In method ```onDrag``` you will get left and right thumb positions. This position will be floats if range ```0..1```. You can also get drag mode, which has three possible values 
-    ```DRAG_LEFT|DRAG_RIGHT|DRAG_MIDDLE```
 
-    You can also get current values of thumb by calling 
+    In method `onDrag` you will get left and right thumb positions. This position will be floats if range `0..1`. You can also get drag mode, which has three possible values
+    `DRAG_LEFT|DRAG_RIGHT|DRAG_MIDDLE`
+
+    You can also get current values of thumb by calling
+
     ```java
     float pos_left = rb_1.getLeftPos();
     float pos_right = rb_1.getLeftPos();
     Log.i("RangeBar", "Position left is " + pos_left + " | Position right is " + pos_right);
     ```
+
 4. You can also set progress left and progress right programmatically or in xml layout
+
     ```xml
     <com.bios.rangebar.RangeBar
        ...
@@ -76,7 +83,7 @@ Library for Android that allows you to select video timeline or any other data t
        ... />
     ```
 
-     ```java
+    ```java
     rb_1.setProgressRight(0.8f);
     rb_1.setProgressLeft(0.5f);
     ```
