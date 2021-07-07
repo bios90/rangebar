@@ -58,7 +58,7 @@ Library for Android that allows you to select video timeline or any other data t
         }
     });
     ```
-    In method ```onDrag``` you will get left and right thumb positions. This position will be floats if range 0..1. You can also get drag mode, which has three possible values 
+    In method ```onDrag``` you will get left and right thumb positions. This position will be floats if range ```0..1```. You can also get drag mode, which has three possible values 
     ```DRAG_LEFT|DRAG_RIGHT|DRAG_MIDDLE```
 
     You can also get current values of thumb by calling 

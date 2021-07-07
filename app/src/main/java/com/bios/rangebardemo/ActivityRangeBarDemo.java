@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import com.bios.rangebar.RangeBar;
 
-public class MainActivity extends AppCompatActivity
+public class ActivityRangeBarDemo extends AppCompatActivity
 {
     private RangeBar rb_1;
     private TextView rb_1_left, rb_1_right, rb_1_mode;
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_range_bar_demo);
 
         rb_1 = findViewById(R.id.rb_1);
         rb_1_left = findViewById(R.id.rb_1_left);

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#E2B6CF"
-    tools:context=".MainActivity">
+    tools:context=".ActivityRangeBarDemo">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -75,7 +75,7 @@
                 app:color_not_selected="#cc007CBE"
                 app:color_selected="#66A03E99"
                 app:color_time_line="#31E981"
-                app:connections_size="4dp"
+                app:connectors_height="4dp"
                 app:progress_left="0.0"
                 app:progress_right="1"
                 app:thumb_radius="0dp"
@@ -121,7 +121,7 @@
                 app:color_not_selected="#805A0001"
                 app:color_selected="#80F45B69"
                 app:color_time_line="#00000000"
-                app:connections_size="2.5dp"
+                app:connectors_height="2.5dp"
                 app:progress_left="0.25"
                 app:progress_right="0.75"
                 app:thumb_radius="3dp"
