@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#80A1D4"
+    android:background="#E2B6CF"
     tools:context=".MainActivity">
 
     <ScrollView
@@ -20,17 +20,21 @@
             <com.bios.rangebar.RangeBar
                 android:id="@+id/rb_1"
 
+                android:layout_marginTop="84dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="128dp"
                 android:paddingLeft="24dp"
                 android:paddingRight="24dp"
-                app:connections_size="2dp"
-                app:progress_left="0.5"
-                app:progress_right="1"
+                app:color_arrow="#61707D"
+                app:color_border="#F5FBEF"
+                app:color_not_selected="#8055D6BE"
+                app:color_selected="#807D5BA6"
+                app:color_time_line="#ffffff"
+                app:connectors_height="4dp"
+                app:progress_left="0.25"
+                app:progress_right="0.75"
                 app:thumb_radius="4dp"
-                app:thumb_width="8dp"
-                app:time_line_height="20dp" />
+                app:thumb_width="12dp" />
 
             <RelativeLayout
                 android:layout_width="match_parent"

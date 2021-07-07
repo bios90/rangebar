@@ -41,8 +41,27 @@ public class MainActivity extends AppCompatActivity
         rb_3_mode = findViewById(R.id.rb_3_mode);
 
 
+        RangeBar rb_1 = findViewById(R.id.rb_1);
+        rb_1.setRangeChangeListener(new RangeBar.Listener()
+        {
+            @Override
+            public void onDrag(float pos_left, float pos_right, RangeBar.State mode)
+            {
+                Log.i("RangeBar", "Position left is " + pos_left + " | Position right is " + pos_right);
+                Log.i("RangeBar", "Drag mode is " + mode);
+            }
+        });
 
-        rb_1.setListener(new RangeBar.Listener()
+        float pos_left = rb_1.getLeftPos();
+        float pos_right = rb_1.getLeftPos();
+
+        rb_1.setProgressRight(0.8f);
+        rb_1.setProgressLeft(0.5f);
+
+        Log.i("RangeBar", "Position left is " + pos_left + " | Position right is " + pos_right);
+
+
+        rb_1.setRangeChangeListener(new RangeBar.Listener()
         {
             @Override
             public void onDrag(float pos_left, float pos_right, RangeBar.State mode)
@@ -54,7 +73,7 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        rb_2.setListener(new RangeBar.Listener()
+        rb_2.setRangeChangeListener(new RangeBar.Listener()
         {
             @Override
             public void onDrag(float pos_left, float pos_right, RangeBar.State mode)
@@ -66,7 +85,7 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        rb_3.setListener(new RangeBar.Listener()
+        rb_3.setRangeChangeListener(new RangeBar.Listener()
         {
             @Override
             public void onDrag(float pos_left, float pos_right, RangeBar.State mode)

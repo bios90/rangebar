@@ -129,7 +129,7 @@ public class RangeBar extends View
                 color_arrow = ta.getColor(R.styleable.RangeBar_color_arrow, color_arrow);
                 size_thumb = ta.getDimensionPixelSize(R.styleable.RangeBar_thumb_width, (int) size_thumb);
                 radius = ta.getDimensionPixelSize(R.styleable.RangeBar_thumb_radius, (int) radius);
-                size_connections = ta.getDimensionPixelSize(R.styleable.RangeBar_connections_size, (int) size_connections);
+                size_connections = ta.getDimensionPixelSize(R.styleable.RangeBar_connectors_height, (int) size_connections);
                 size_range_bar_height = ta.getDimensionPixelSize(R.styleable.RangeBar_time_line_height, (int) size_range_bar_height);
 
                 float progress_left = ta.getFloat(R.styleable.RangeBar_progress_left, last_setted_progress_left);
@@ -550,7 +550,7 @@ public class RangeBar extends View
         listener.onDrag(left, right, state);
     }
 
-    public void setListener(Listener listener)
+    public void setRangeChangeListener(Listener listener)
     {
         this.listener = listener;
     }

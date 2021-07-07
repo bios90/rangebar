@@ -7,7 +7,6 @@
         <attr name="color_time_line" format="color" />
         <attr name="color_arrow" format="color" />
         <attr name="thumb_width" format="dimension" />
-        <attr name="connections_size" format="dimension" />
         <attr name="thumb_radius" format="dimension" />
         <attr name="connectors_height" format="dimension" />
         <attr name="time_line_height" format="dimension" />
